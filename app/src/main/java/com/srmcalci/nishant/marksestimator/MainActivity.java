@@ -145,10 +145,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 Toast.makeText(MainActivity.this,"Need "+2*marks+" marks in UNIV. EXAM", Toast.LENGTH_LONG).show();
                 if (marks > 50)
                 {
-                    button1.setText("Aukat se bahar");
+                    button1.setText("OUT OF RANGE");
                 } else {
                     marks = marks * 2;
-                    button1.setText(String.valueOf(marks));
+                    button1.setText(String.valueOf(marks)+" Marks" +
+                            "");
                 }
 
             }
